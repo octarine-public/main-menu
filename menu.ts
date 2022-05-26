@@ -52,8 +52,8 @@ export const CamAngles = CameraTree.AddVector2(
 )
 export const CamInverseDire = CamAngles.node.AddToggle("Inverse for Dire", false)
 export const CamMouseTree = CameraTree.AddNode("Mouse wheel")
-export const CamMouseState = CamMouseTree.AddToggle("State")
-export const CamMouseStateCtrl = CamMouseTree.AddToggle("Change if Ctrl is down")
+export const CamMouseState = CamMouseTree.AddToggle("State", true)
+export const CamMouseStateCtrl = CamMouseTree.AddToggle("Change if Ctrl is down", true)
 export const CamStep = CamMouseTree.AddSlider("Camera Step", 50, 10, 1000)
 
 CameraTree.AddButton("Reset", "Reset settings").OnValue(() => {
