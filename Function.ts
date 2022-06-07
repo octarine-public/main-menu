@@ -42,7 +42,6 @@ export function UpdateVisuals() {
 	ConVars.Set("fow_client_visibility", 0)
 	ConVars.Set("r_farz", camera_hacks ? CamDist.value * 10 : -1)
 	ConVars.Set("fog_enable", !fow_hacks)
-	ConVars.Set("fow_client_nofiltering", !fow_hacks)
 	ConVars.Set("dota_use_particle_fow", !fow_hacks)
 	ConVars.Set("cl_weather", !OBSBypass.value ? MainWeatherState.selected_id : -1)
 }
